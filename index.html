@@ -3,221 +3,969 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="img" href="./images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>The Cities Of Knowledge eBook Library</title>
 </head>
 <body>
 
     <!-- HEADER -->
-     <header class="container">
-        <div class="head">
-            <h1 title="Welcome To Library"> <i><ion-icon name="logo-alipay"></ion-icon></i> Cities Of Knowledge</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">List</a></li>
-               <li><a href="#">Contact Us</a></li>
-               <li><a href="#">Help</a></li>
-            </ul>
-          <label for="Book"> Books</label>
-          <select name="BookS" id="Books">
-            <OPtion value="1"></OPtion>
-            <OPtion value="1">Famous Book</OPtion>
-            <OPtion value="1">Cultural Book</OPtion>
-            <OPtion value="1">Children Book</OPtion>
-          </select>
-          <button>Sing Up</button>
-         <p> <ion-icon name="menu-outline"></ion-icon></p>
-        </div>
-        <div class="image" >
-            <img src="images/pexels-cottonbro-4855373-removebg-preview.png" alt="">
-            <div class="circle"></div>
+<header class="library-header header-shadow">
+    <div class="header-content">
+
+        <!-- === 1. TOP BAR (Secondary Info) === -->
+        <div class="top-bar-secondary">
+            <div class="secondary-links">
+                <a href="#">Photography <i class="fas fa-angle-down text-xs ml-1"></i></a>
+                <a href="#">Search Books Here</a>
+                <a href="#" class="text-xs hover:underline transition-colors">info@gmail.com</a>
             </div>
         </div>
-     </header>
 
-     <!--ASIDE-->
-      <div class="aside">
-        <div class="aside-par">
-            <h1>Cities Of Knowledge</h1>
-            <h2>The Knowledge <span>eBook Library</span></h2>
-            <p>Browse From The Largest Collection Of eBook
-                Reading Stories From anywhere, at anytime
-            </p>
-            <nav>
-                <input type="text" name="user" placeholder="Search By Book Name">
-                <button>Search</button>
-            </nav>
+        <!-- === 2. MIDDLE BAR (Logo, Search, Icons, User Avatar) === -->
+        <div class="middle-bar">
             
-        </div>
-      </div>
-
-      <!--SHOWCASE-->
-      <div class="showcase">
-        <a href="#">Welcome To  Cities Of Knowledge Library</a>
-        <div class="show">
-            <div>
-              <i>  <ion-icon name="desktop-outline"> </ion-icon></i>
-                <p> Read Free Library Books Online</p>
+            <!-- Logo & Mobile Toggle -->
+            <div class="logo-group">
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="logo">
+                    <i class="fas fa-book-open"></i>
+                    BookHive
+                </div>
             </div>
-            <div>
-                <i><ion-icon name="calendar-number-outline"></ion-icon></i>
-                <p>Set a Year Reading Goal</p>
-            </div>
-            <div>
-               <i> <ion-icon name="library-outline"></ion-icon></i>
-                <p>Keep Track Of Your Favorite Books</p>
-            </div>
-        </div>
-      </div>
 
-      <!-- ARTICLE -->
-       <div class="aritcle">
-      <div class="section">
-       <div class="color"> <i> <a href="#">Famous Books</a></i></div>
-        <div class="airt-one">
-        <div class="book">
-            <img src="images/download (b).jpg" alt="">
-            <h2>pride and Prejudice </h2>
-            <h3>كبريا و تحمل</h3>
-            <button>Read More</button>
-        </div>
+            <!-- Search Bar (Pill Shape - Desktop Only) -->
+            <div class="search-container">
+                <input type="text" placeholder="Search Books Here" class="search-input">
+                <i class="fas fa-search search-icon"></i>
+            </div>
 
-        <div class="book">
-            <img src="images/seven habits.jpg" alt="">
-            <h2>The Seven habits of Highly </h2>
-            <h3>العادات السبع للناس الاكثر فعالية</h3>
-            <button>Read More</button>
-        </div>
-        <div class="book">
-            <img src="images/george.jpg" alt="">
-            <h2>george Orwell "1984" </h2>
-            <h3>جورج اربيل</h3>
-            <button>Read More</button>
-        </div>
-        <div class="book">
-            <img src="images/men in sun.jpg" alt="">
-            <h2>Men in  The Sun </h2>
-            <h3>رجال في الشمس</h3>
-            <button>Read More</button>
-        </div>
-      </div>
+            <!-- Icons, Notifications, Avatar -->
+            <div class="middle-bar-icons">
+                
+                <!-- Icons (Heart and Cart) -->
+                <a href="#" class="icon-link icon-link-heart">
+                    <i class="fas fa-heart"></i>
+                </a>
+                <a href="#" class="badge-container icon-link">
+                    <i class="fas fa-shopping-bag"></i>
+                    <!-- Notification badge -->
+                    <span class="notification-badge">
+                        21
+                    </span>
+                </a>
+
+                <!-- User Avatar & Name (Tablet/Desktop Only) -->
+                <div class="user-avatar-group">
+                    <img src="https://placehold.co/40x40/f48c06/ffffff?text=B" alt="User Avatar">
+                    <span>Brian</span>
+                </div>
+            </div>
         </div>
 
-    <!--airt-two-->
-    <div class="section">
-        <div class="color"> <i><a href="#">Cultural Books</a></i></div >
-        <div class="airt-two">
-            <div class="book">
-                <img src="images/part5.jpg" alt="">
-                <h2>Wretched </h2>
-                <h3>البؤساء</h3>
-                <button>Read More</button>
-            </div>
-            <div class="book">
-                <img src="images/Baby2.jpg" alt="">
-                <h2>The Way Of Suuan's To The Hajj </h2>
-                <h3>طريق سؤان</h3>
-                <button>Read More</button>
-            </div>
-            <div class="book">
-                <img src="images/baby3.jpg" alt="">
-                <h2>The Days In The Big Ocean </h2>
-                <h3>الايام</h3>
-                <button>Read More</button>
-            </div>
-            <div class="book">
-                <img src="images/part 4.jpg" alt="">
-                <h2>The History Of Reading </h2>
-                <h3>تاريخ القراء</h3>
-                <button>Read More</button>
+        <!-- === 3. BOTTOM BAR (Main Navigation Links & Get in touch - Desktop Only) === -->
+        <div class="bottom-bar">
+            
+            <!-- Main Navigation Links -->
+            <nav class="main-nav-links-desktop">
+                <a href="#" class="main-nav-link">Home </a>
+                <a href="3" class="main-nav-link">Pages <i class="fas fa-angle-down"></i></a>
+                <a href="#" class="main-nav-link">Shop </a>
+                <a href="#" class="main-nav-link">Blog </a>
+                <a href="./src/PostLayout.html" class="main-nav-link">Post Layout <i class="fas fa-angle-down"></i></a>
+                <a href="./src/contact.html" class="main-nav-link">Contact Us</a>
+            </nav>
+
+            <!-- Get in touch Button -->
+            <div class="nav-right">
+                <button class="btn-contact">
+                    Get In Touch
+                </button>
             </div>
         </div>
     </div>
+    
+    <!-- === MOBILE MENU SLIDE-OUT CONTENT === -->
+    <div id="mobile-menu-content">
+        <div class="p-5">
+            <!-- <h2 class="mobile-menu-title">Navigation</h2> -->
 
-    <!-- airt-three -->
-    <div class="section">
-     <div class="color"><i><a href="#">Children Books</a></i></div>
-     <div class="airt-three">
-        <div class="book">
-            <img src="images/Baby.jpg" alt="">
-            <h2>Charlie and The Chocolate </h2>
-            <h3>تشارلي و مصنع الشوكولاتة</h3>
-            <button>Read More</button>
-        </div>
-        <div class="book">
-            <img src="images/Baby1.jpg" alt="">
-            <h2>Harry Potter </h2>
-            <h3>هاري بوتير</h3>
-            <button>Read More</button>
-        </div>
-        <div class="book">
-            <img src="images/Baby2.jpg" alt="">
-            <h2>Tales Of Juha About Islam and Goog For Kids</h2>
-            <h3>حكايات جحا</h3>
-            <button>Read More</button>
-        </div>
-        <div class="book">
-            <img src="images/baby3.jpg" alt="">
-            <h2> Sindbad  </h2>
-            <h3>سندبات</h3>
-            <button>Read More</button>
-        </div>
-     </div>
-       </div>
-       </div>
-
-       <!-- video -->
-        <div class="slider"></div>
-
-       <!--middle-->
-       <div class="middle">
-        <div>
-            <h1>The Joy Of Reading Books</h1>
-            <p>    Reading Books Is one Of most Rewarding and enriching activities One 
-                can engage in. it opens The  doors To New Worlds, ideas,
-                and Perspective.Whether it's Fiction,non-fiction, poetry
-                Or biographies,books Offer a treasure trove Of
-                Knowledge, inspiration, and entertainment</p>
-        </div>
-        <img src="images/smartmockups_m4rbfknc.png" alt="">
-       </div>
-
-       <!-- footer -->
-        <div class="footer">
-            <div class="foot">
-                <div>
-                    <p>Discover a World Full Of Knowledge,
-                        Culture and Science and Reading That Make
-                        You A Different Person Don't 
-                        Stop From Reading With Our Library
-                    </p>
-                    <i><ion-icon name="logo-facebook"></ion-icon></i>
-                    <i><ion-icon name="logo-instagram"></ion-icon></i>
-                    <i><ion-icon name="logo-google"></ion-icon></i>
-                    <i><ion-icon name="logo-github"></ion-icon></i>
-                </div>
-                <ul>
-                    <h2>Address</h2>
-                    <li><ion-icon name="location-outline"></ion-icon> 45 Street, City : Sudan,Khartoum</li>
-                    <li><ion-icon name="call-outline"></ion-icon>+249 121 896 438</li>
-                    <li><ion-icon name="mail-outline"></ion-icon> Mwafggommaabdula@gmail.com</li>
-                </ul>
-                <ul>
-                    <h2>Link</h2>
-                    <li><a href="#">Tag Team</a></li>
-                    <li><a href="#">Condition</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <!-- Mobile Search Bar -->
+            <div class="mobile-search-container">
+                <input type="text" placeholder="Search Books Here" class="search-input">
             </div>
-            <hr>
-            <p>Copy-Right &copy; 2024 <span> H-Developed By Mwafg Gumma</span></p>
             
-        </div>
-       
+            <!-- Mobile Main Links -->
+            <nav class="mobile-main-links">
+                <a href="#">Home</a>
+                <a href="#">Pages</a>
+                <a href="#">Shop</a>
+                <a href="#">Blog</a>
+                <a href="#">Post Layout</a>
+                <a href="#">Contact Us</a>
+            </nav>
 
-     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-     <script src="main.js"></script>
+            <!-- Mobile Secondary Links/Actions -->
+            <div class="mobile-actions-group">
+                <div class="mobile-action-item">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Brian</span>
+                </div>
+                <div class="mobile-action-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Favourites</span>
+                </div>
+                <div class="mobile-action-item">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Cart (21)</span>
+                </div>
+                <button class="btn-contact mobile-action-button">
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- === MAIN HERO SECTION (New Content) === -->
+<!-- ==================================================================== -->
+<main class="hero-section">
+    <div class="hero-content-container">
+        <div class="hero-column hero-text-content">
+            <!-- Logo -->
+            <div class="logo">
+                Bookworm Hub
+            </div>
+            
+            <!-- Two Small Spans -->
+            <div class="hero-subheadings">
+                <span>The world's leading online library and bookstore.</span>
+                <span>Discover over 1 million titles delivered digitally.</span>
+            </div>
+            
+            <!-- Description -->
+            <p class="hero-description">
+                Bookland is your ultimate destination for literary exploration. We curate the finest collection of novels,
+                academic texts, and unique manuscripts, ensuring every reader finds their next great adventure.
+            </p>
+            
+            <!-- Two Buttons -->
+            <div class="hero-buttons">
+                <button class="btn-primary">
+                    Explore New Releases
+                </button>
+                <button class="btn-secondary">
+                    Contact an Expert
+                </button>
+            </div>
+        </div>
+        
+        <!-- COLUMN 2: Image with Circular Background (Right/Bottom) -->
+        <div class="hero-column">
+            <div class="hero-image-wrapper">
+                <!-- Background Circle -->
+                <div class="hero-background-circle"></div>
+                <!-- Image (Circular with 50% border-radius) -->
+                <img 
+                    src="./images/main-img.png" 
+                    alt="A conceptual image representing reading and knowledge." 
+                    class="hero-image"
+                >
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- === 6. NEW BOOK SLIDER SECTION === -->
+<!-- Section: Featured Books -->
+<section class="featured-books-section">
+    <h2 class="section-title">Recomended For You</h2>
+    <p class="section-description">
+        Explore our curated selection of the latest and most exciting books added <br> to the Bookland collection this week.
+    </p>
+
+    <!-- 1. Navigation Controls (الأزرار الدائرية) -->
+    <div class="slider-controls-wrapper">
+        <button id="prev-book-btn" class="slider-nav-btn">
+            <i class="fas fa-chevron-left"></i> <!-- < -->
+        </button>
+        <button id="next-book-btn" class="slider-nav-btn">
+            <i class="fas fa-chevron-right"></i> <!-- > -->
+        </button>
+    </div>
+
+    <!-- 2. Book Slider Box (تحته مباشرة) -->
+    <div id="book-slider" class="book-slider-container">
+        
+        <!-- Book Card 1 -->
+        <div class="book-card">
+            <div class="book-image-wrapper">
+                <img src="./images/B.png" class="book-image" alt="Book Cover 1">
+                <div class="image-overlay">
+                    <i class="fas fa-eye eye-icon"></i>
+                </div>
+            </div>
+            <div class="book-title">Business</div>
+            <div class="book-author">By Layla Ahmed</div>
+            <div class="book-rating">
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+            </div>
+            <div class="book-price">$29.99</div>
+        </div>
+        
+        <!-- Book Card 2  -->
+        <div class="book-card">
+            <div class="book-image-wrapper">
+                <img src="./images/D.png" class="book-image" alt="Book Cover 2">
+                <div class="image-overlay"><i class="fas fa-eye eye-icon"></i></div>
+            </div>
+            <div class="book-title">Echoes of the Nile</div>
+            <div class="book-author">By Layla Ahmed</div>
+            <div class="book-rating">
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+            </div>
+            <div class="book-price">$18.50</div>
+        </div>
+
+        <!-- Book Card 3 -->
+        <div class="book-card">
+            <div class="book-image-wrapper">
+                <img src="./images/F.png" class="book-image" alt="Book Cover 3">
+                <div class="image-overlay"><i class="fas fa-eye eye-icon"></i></div>
+            </div>
+            <div class="book-title">Quantum Destiny</div>
+            <div class="book-author">By Dr. Zaki</div>
+            <div class="book-rating">
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+            </div>
+            <div class="book-price">$35.00</div>
+        </div>
+        
+        <!-- Book Card 4 -->
+        <div class="book-card">
+            <div class="book-image-wrapper">
+                <img src="./images/H.png" class="book-image" alt="Book Cover 4">
+                <div class="image-overlay"><i class="fas fa-eye eye-icon"></i></div>
+            </div>
+            <div class="book-title">The Art Renaissance</div>
+            <div class="book-author">By John Smith</div>
+            <div class="book-rating">
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+            </div>
+            <div class="book-price">$22.99</div>
+        </div>
+
+        <!-- Book Card 5 -->
+        <div class="book-card">
+            <div class="book-image-wrapper">
+                <img src="./images/G.png" class="book-image" alt="Book Cover 5">
+                <div class="image-overlay"><i class="fas fa-eye eye-icon"></i></div>
+            </div>
+            <div class="book-title">Celestial Journey</div>
+            <div class="book-author">By Amelia Sky</div>
+            <div class="book-rating">
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+            </div>
+            <div class="book-price">$19.00</div>
+        </div>
+
+        <!-- Book Card 6 -->
+        <div class="book-card">
+            <div class="book-image-wrapper">
+                <img src="./images/J.jpg" class="book-image" alt="Book Cover 6">
+                <div class="image-overlay"><i class="fas fa-eye eye-icon"></i></div>
+            </div>
+            <div class="book-title">The Secret Key</div>
+            <div class="book-author">By Jane Doe</div>
+            <div class="book-rating">
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+            </div>
+            <div class="book-price">$25.50</div>
+        </div>
+        <!-- Book Card 7 -->
+        <div class="book-card">
+            <div class="book-image-wrapper">
+                <img src="./images/C.png" class="book-image" alt="Book Cover 6">
+                <div class="image-overlay"><i class="fas fa-eye eye-icon"></i></div>
+            </div>
+            <div class="book-title">The Secret Key</div>
+            <div class="book-author">By Jane Doe</div>
+            <div class="book-rating">
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+            </div>
+            <div class="book-price">$25.50</div>
+        </div>
+        <!-- Book Card 8 -->
+        <div class="book-card">
+            <div class="book-image-wrapper">
+                <img src="./images/K.jpg" class="book-image" alt="Book Cover 6">
+                <div class="image-overlay"><i class="fas fa-eye eye-icon"></i></div>
+            </div>
+            <div class="book-title">The Secret Key</div>
+            <div class="book-author">By Jane Doe</div>
+            <div class="book-rating">
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+            </div>
+            <div class="book-price">$25.50</div>
+        </div>
+        <!-- Book Card 9 -->
+        <div class="book-card">
+            <div class="book-image-wrapper">
+                <img src="./images/P.jpg" class="book-image" alt="Book Cover 6">
+                <div class="image-overlay"><i class="fas fa-eye eye-icon"></i></div>
+            </div>
+            <div class="book-title">The Secret Key</div>
+            <div class="book-author">By Jane Doe</div>
+            <div class="book-rating">
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+            </div>
+            <div class="book-price">$25.50</div>
+        </div>
+        <!-- Book Card 10 -->
+        <div class="book-card">
+            <div class="book-image-wrapper">
+                <img src="./images/E.png" class="book-image" alt="Book Cover 6">
+                <div class="image-overlay"><i class="fas fa-eye eye-icon"></i></div>
+            </div>
+            <div class="book-title">The Secret Key</div>
+            <div class="book-author">By Jane Doe</div>
+            <div class="book-rating">
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+            </div>
+            <div class="book-price">$25.50</div>
+        </div>
+        <!-- Book Card 11 -->
+        <div class="book-card">
+            <div class="book-image-wrapper">
+                <img src="./images/L.jpg" class="book-image" alt="Book Cover 6">
+                <div class="image-overlay"><i class="fas fa-eye eye-icon"></i></div>
+            </div>
+            <div class="book-title">The Secret Key</div>
+            <div class="book-author">By Jane Doe</div>
+            <div class="book-rating">
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+            </div>
+            <div class="book-price">$25.50</div>
+        </div>
+        <!-- Book Card 12 -->
+        <div class="book-card">
+            <div class="book-image-wrapper">
+                <img src="./images/A.png" class="book-image" alt="Book Cover 6">
+                <div class="image-overlay"><i class="fas fa-eye eye-icon"></i></div>
+            </div>
+            <div class="book-title">The Secret Key</div>
+            <div class="book-author">By Jane Doe</div>
+            <div class="book-rating">
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+            </div>
+            <div class="book-price">$25.50</div>
+        </div>
+        <!-- Book Card 13 -->
+        <div class="book-card">
+            <div class="book-image-wrapper">
+                <img src="./images/I.png" class="book-image" alt="Book Cover 6">
+                <div class="image-overlay"><i class="fas fa-eye eye-icon"></i></div>
+            </div>
+            <div class="book-title">The Secret Key</div>
+            <div class="book-author">By Jane Doe</div>
+            <div class="book-rating">
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+                <span>&#9733</span>
+            </div>
+            <div class="book-price">$25.50</div>
+        </div>
+
+    </div>
+</section>
+
+<!--  -->
+
+<section class="mission-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h1 class="section-title">Our Mission</h1>
+                <p class="section-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                </p>
+            </div>
+
+            <!-- Mission Cards -->
+            <div class="cards-grid">
+                <!-- Best Bookstore Card -->
+                <div class="mission-card">
+                    <div class="card-icon bookstore-icon"></div>
+                    <h2 class="card-title">Best Bookstore</h2>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua.
+                    </p>
+                    <a href="#" class="learn-more-link">Learn More</a>
+                </div>
+
+                <!-- Trusted Seller Card (Featured) -->
+                <div class="mission-card featured">
+                    <div class="card-icon award-icon"></div>
+                    <h2 class="card-title">Trusted Seller</h2>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua.
+                    </p>
+                    <a href="#" class="learn-more-link">Learn More</a>
+                </div>
+
+                <!-- Expand Store Card -->
+                <div class="mission-card">
+                    <div class="card-icon store-icon"></div>
+                    <h2 class="card-title">Expand Store</h2>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua.
+                    </p>
+                    <a href="#" class="learn-more-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- special section -->
+
+     <section class="special-section">
+         <div class="container">
+             <!-- Section Header -->
+             <div class="section-header">
+                 <span class="section-badge">Special Features</span>
+                 <h1 class="section-title">Exceptional Services</h1>
+                 <p class="section-description">
+                     Discover our exclusive library services designed to enhance your learning experience and provide access to premium resources
+                 </p>
+             </div>
+              <!-- Features Grid -->
+            <div class="features-grid">
+                <!-- Digital Collections -->
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon digital-icon"></div>
+                        <h2 class="feature-title">Digital Collections</h2>
+                    </div>
+                    <p class="feature-description">
+                        Access thousands of digital books, journals, and multimedia resources from anywhere, anytime.
+                    </p>
+                    <ul class="feature-highlights">
+                        <li>50,000+ eBooks and audiobooks</li>
+                        <li>Academic journals and databases</li>
+                        <li>Digital archives and manuscripts</li>
+                        <li>24/7 online access</li>
+                    </ul>
+                    <a href="#" class="feature-link">Explore Digital Library</a>
+                </div>
+
+                <!-- Community Events -->
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon events-icon"></div>
+                        <h2 class="feature-title">Community Events</h2>
+                    </div>
+                    <p class="feature-description">
+                        Join our vibrant community through workshops, book clubs, lectures, and cultural events.
+                    </p>
+                    <ul class="feature-highlights">
+                        <li>Weekly book clubs and discussions</li>
+                        <li>Author readings and signings</li>
+                        <li>Educational workshops</li>
+                        <li>Cultural exhibitions</li>
+                    </ul>
+                    <a href="#" class="feature-link">View Events Calendar</a>
+                </div>
+                
+                <!-- Research Services -->
+                <!-- <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon research-icon"></div>
+                        <h2 class="feature-title">Research Support</h2>
+                    </div>
+                    <p class="feature-description">
+                        Professional research assistance and specialized resources for students, faculty, and researchers.
+                    </p>
+                    <ul class="feature-highlights">
+                        <li>One-on-one research consultations</li>
+                        <li>Citation and formatting help</li>
+                        <li>Access to specialized databases</li>
+                        <li>Interlibrary loan services</li>
+                    </ul>
+                    <a href="#" class="feature-link">Schedule Consultation</a>
+                </div> -->
+
+                <!-- Premium Membership -->
+                <div class="feature-card premium">
+                    <div class="feature-header">
+                        <div class="feature-icon premium-icon"></div>
+                        <h2 class="feature-title">Premium Membership</h2>
+                    </div>
+                    <p class="feature-description">
+                        Unlock exclusive benefits with our premium membership including priority access and special privileges.
+                    </p>
+                    <ul class="feature-highlights">
+                        <li>Extended borrowing periods</li>
+                        <li>Priority book reservations</li>
+                        <li>Exclusive member events</li>
+                        <li>Personal study room access</li>
+                    </ul>
+                    <a href="#" class="feature-link">Upgrade Membership</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Newsletter Section -->
+<section class="newsletter-section">
+    <div class="newsletter-content">
+        <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+        <p class="newsletter-description">
+            Get the latest book reviews, exclusive offers, and reading tips delivered straight to your inbox every week.
+        </p>
+        <form id="subscribe-form" class="subscribe-form" action="#" method="POST">
+            <input 
+                type="email" 
+                placeholder="Enter your email address here..." 
+                required 
+                class="email-input"
+            >
+            <button type="submit" class="subscribe-btn">
+                Subscribe <i class="fas fa-arrow-right"></i>
+            </button>
+        </form>
+    </div>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Website Footer - Flexbox Four Columns</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        /* Demo page styles (to show the footer in context) */
+        .demo-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .demo-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .demo-content h1 {
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+
+        .demo-content p {
+            margin-bottom: 1rem;
+            color: #666;
+        }
+
+        /* Footer Styles */
+        .library-footer {
+            background-color: #2c3e50; /* Dark blue-gray for library theme */
+            color: #ecf0f1; /* Light text */
+            padding: 2rem 0 1rem;
+            margin-top: 2rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Flexbox Layout for Four Columns */
+        .footer-grid {
+            display: flex;
+            flex-direction: row; /* Default: Row layout for large screens */
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            flex: 1; /* Each section takes equal space */
+            min-width: 250px; /* Minimum width to prevent squeezing */
+        }
+
+        .footer-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #3498db; /* Blue accent */
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-subtitle {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ecf0f1;
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-description {
+            color: #bdc3c7;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        /* First Column: Website Details and Icons */
+        .website-details {
+            max-width: 300px;
+        }
+
+        .website-icons {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #3498db;
+            transition: transform 0.2s ease;
+        }
+
+        .icon-item:hover {
+            transform: scale(1.1);
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .icon-label {
+            font-size: 0.8rem;
+            color: #bdc3c7;
+            text-align: center;
+        }
+
+        /* Links Columns (2nd, 3rd, 4th) */
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .footer-link {
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 0.25rem 0;
+            transition: color 0.2s ease, padding-left 0.2s ease;
+            position: relative;
+            display: block;
+        }
+
+        .footer-link:hover {
+            color: #3498db;
+            padding-left: 0.5rem;
+        }
+
+        .footer-link::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .footer-link:hover::before {
+            opacity: 1;
+        }
+
+        /* Fourth Column: Four Specific Links (e.g., Utility/Social Links) */
+        .utility-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .utility-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .utility-link:hover {
+            background-color: rgba(52, 152, 219, 0.1);
+            color: #3498db;
+            border-color: #3498db;
+        }
+
+        .utility-icon {
+            font-size: 1.1rem;
+        }
+
+        /* Copyright Section */
+        .copyright-section {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid #34495e;
+            color: #95a5a6;
+            font-size: 0.85rem;
+        }
+
+        /* Media Queries for Responsive Design */
+        /* Small Screens (Mobile): Stack columns vertically */
+        @media (max-width: 767px) {
+            .footer-grid {
+                flex-direction: column; /* Stack in column on small screens */
+                gap: 1.5rem;
+                align-items: stretch; /* Full width on mobile */
+            }
+
+            .footer-section {
+                min-width: auto; /* Allow full width on mobile */
+                flex: none; /* Don't grow, take natural width */
+            }
+
+            .website-icons {
+                justify-content: center; /* Center icons on mobile */
+            }
+
+            .library-footer {
+                padding: 1.5rem 0 1rem;
+            }
+
+            .footer-container {
+                padding: 0 0.5rem;
+            }
+        }
+
+        /* Tablet Screens: 2 columns (row with wrap) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .footer-grid {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .footer-section {
+                flex: 1 1 calc(50% - 1rem); /* Two columns with gap adjustment */
+                min-width: 280px;
+            }
+
+            .website-details {
+                flex: 1 1 100%; /* First column takes full width on tablet for better readability */
+                max-width: none;
+            }
+        }
+
+        /* Large Screens (Desktop): Full 4-column row */
+        @media (min-width: 1024px) {
+            .footer-grid {
+                flex-direction: row;
+                flex-wrap: nowrap; /* No wrapping on large screens */
+                gap: 2rem;
+                justify-content: space-between;
+            }
+
+            .footer-section {
+                flex: 1; /* Equal width for all four */
+                min-width: 200px;
+            }
+
+            .footer-container {
+                padding: 0 2rem;
+            }
+        }
+
+        /* Extra small screens adjustment */
+        @media (max-width: 480px) {
+            .footer-title {
+                font-size: 1.125rem;
+            }
+
+            .footer-subtitle {
+                font-size: 1rem;
+            }
+
+            .footer-description {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Footer with Four Columns using Flexbox -->
+    <footer class="library-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- First Column: Details about the website and icons -->
+                <div class="footer-section website-details">
+                    <h3 class="footer-title">City Central Library</h3>
+                    <p class="footer-description">
+                        Established in 1923, we serve as your community's hub for education, 
+                        research, and cultural enrichment. Discover books, events, and digital resources.
+                    </p>
+                    <div class="website-icons">
+                        <div class="icon-item">
+                            <div class="icon">📚</div>
+                            <span class="icon-label">Books</span>
+                        </div>
+                        <div class="icon-item">
+                            <div class="icon">🎓</div>
+                            <span class="icon-label">Learning</span>
+                        </div>
+                        <div class="icon-item">
+                            <div class="icon">👥</div>
+                            <span class="icon-label">Community</span>
+                        </div>
+                        <div class="icon-item">
+                            <div class="icon">💻</div>
+                            <span class="icon-label">Digital</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Column: Links (e.g., Navigation Links) -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Navigation</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Home</a>
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Services</a>
+                        <a href="#" class="footer-link">Membership</a>
+                        <a href="#" class="footer-link">Donate</a>
+                    </div>
+                </div>
+
+                <!-- Third Column: Links (e.g., Resources Links) -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Resources</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Online Catalog</a>
+                        <a href="#" class="footer-link">E-Books & Audiobooks</a>
+                        <a href="#" class="footer-link">Events Calendar</a>
+                        <a href="#" class="footer-link">Research Databases</a>
+                        <a href="#" class="footer-link">Local History</a>
+                    </div>
+                </div>
+
+                <!-- Fourth Column: Four Links (e.g., Utility/Social Links) -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Connect</h4>
+                    <div class="utility-links">
+                        <a href="#" class="utility-link">
+                            <span class="utility-icon">📧</span>
+                            Contact Us
+                        </a>
+                        <a href="#" class="utility-link">
+                            <span class="utility-icon">🗺️</span>
+                            Directions
+                        </a>
+                        <a href="#" class="utility-link">
+                            <span class="utility-icon">❓</span>
+                            FAQ
+                        </a>
+                        <a href="#" class="utility-link">
+                            <span class="utility-icon">🛡️</span>
+                            Privacy Policy
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="copyright-section">
+                <p>&copy; 2025 BookHiveLibrary. All rights reserved | By Mwafg-Dev</p>
+            </div>
+        </div>
+    </footer>
+ 
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./src/main.js"></script>
 </body>
 </html>
+
